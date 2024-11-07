@@ -1,5 +1,6 @@
 import React from "react";
 import logo from './assets/logo.svg'
+import "./css/topbar.css"
 
 const links=[
     {name:"about",ad:""},
@@ -26,13 +27,13 @@ const Linklist=({list})=>{
 
 function TopBar(){
     return(
-        <div>
-            <div>
+        <div className="topbar">
+            <div className="logo">
             <img src={logo}>
             </img>
              
             </div>
-            <div>
+            <div className="links">
                 
                     <Linklist list={links}/>
                 
