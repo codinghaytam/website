@@ -49,7 +49,7 @@ li{
     margin: 0px;
 }
 
-li:hover{
+.topbar li:hover{
     background-color: white;
     a{
         color: #131416;
