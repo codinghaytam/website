@@ -1,23 +1,51 @@
+
+
 .background{
     width: 100%;
     height: 50em;
-
+    background: linear-gradient(45deg,black,#1A1A28,#171749,#009FFD);
+    border-collapse: collapse;
+    grid-row: 5;
+    grid-column: 5;
+    border: 0.1vb white;
 }
+
 .filter{
-    background: #1A1A28;
+
     width: inherit;
     height: inherit;
-    backdrop-filter: blur(50px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    backdrop-filter: blur(200px);
+    
+
     
 }
 
+.background-grid {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 0.1vb, transparent 0.1vb, transparent calc(100% - 0.1vb), rgba(255, 255, 255, 0.05)calc(100% - 0.1vb)), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0.1vb, transparent 0.1vb, transparent calc(100% - 0.1vb), rgba(255, 255, 255, 0.05) calc(100% - 0.1vb));
+    background-size: 40px 40px;
+    border: 0.1vb solid rgba(255, 255, 255, 0.05);
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
 h1{
     color: antiquewhite;
     padding:0px;
     margin: 0px;
-   
+   font-family: inherit;
+   font-size: 40px;
+   text-align: center;
+
+}
+#name{
+    width: 80%;
+    font-size: 65px;
+    font-weight: 300;
+    text-align: center;
+    color: #009FFD;
 
 }
