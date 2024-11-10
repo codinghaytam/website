@@ -1,0 +1,23 @@
+.background{
+    width: 100%;
+    height: 50em;
+
+}
+.filter{
+    background: #1A1A28;
+    width: inherit;
+    height: inherit;
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1{
+    color: antiquewhite;
+    padding:0px;
+    margin: 0px;
+   
+
+}
