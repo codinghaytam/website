@@ -32,6 +32,7 @@ function Hero(){
                             />
                         </svg>
                         </a>
+                        <div className="tooltip">LinkedIn</div>
                     </li>
                     <li className="icon-content" id="github">
                         <a
