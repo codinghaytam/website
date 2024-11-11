@@ -1,24 +1,17 @@
 import React from "react";
-
-function talk_to(){
-    return(
-        <div className="">
-            <form>
-                    <div className="info">
-                        <label htmlFor="your-name">your name</label>
-                        <input type="text" className="your-name" name="your-name"/>
-                        <label htmlFor="your-email">your email</label>
-                        <input type="email" className="your-email" name="your-email"/>
-                        <label htmlFor="subject">subject</label>
-                        <input type="text" className="subject" name="subject" />
-                    </div>
-                    <div className="text">
-                        <label htmlFor="message">your message</label>
-                        <textarea className="message" name="message">
-
-                        </textarea>
-                    </div>
-                </form>
+import './css/talk_to.css'
+function Talk_to(){
+    return (
+        <div>
+            
+            <form className="form">
+                <input className="input" type="text" placeholder="Name"/>
+                <input className="input" type="text" placeholder="E-Mail I.D."/>
+                <textarea className="textarea" placeholder="Enter message"></textarea>
+                <center><button className="button">Submit</button></center>
+            </form>
         </div>
     )
 }
+
+export default Talk_to
