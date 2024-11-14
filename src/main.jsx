@@ -6,6 +6,8 @@ import Hero from './Hero.jsx'
 import About from './About.jsx'
 import Projects from './projects.jsx'
 import Talk_to from './talk_to.jsx'
+import Footer from './footer.jsx'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <TopBar/>
@@ -13,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <About/>
     <Projects/>
     <Talk_to/>
+    <Footer/>
   </StrictMode>,
 )

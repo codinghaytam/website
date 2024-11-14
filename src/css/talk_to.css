@@ -1,35 +1,47 @@
-.form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    background-image: linear-gradient(45deg, #330808, 
-    #3a2c09);
-    border-radius: 2.5em;
-    padding: 30px;
-    width: 300px;
-    height: 350px;
-  }
+.emailcontaine h1{
+  color: #009FFD;
+  font-size: 50px;
+  font-family: 'ubuntu',sans-serif;
+  align-self: center;
+}
+.emailcontaine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60em;
+  width: 100%;
+  background-color: #131416;
   
-  .form::before {
-    content: '';
-    background-image: linear-gradient(45deg, #ff0000, 
-    #ffb700);
-    height: 358px;
-    width: 309px;
-    position: absolute;
-    margin-top: -34px;
-    margin-left: px;
-    z-index: -1;
-    border-radius: 2.7em;
+}
+.form {
+
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    
   }
+ .inputs{
+  margin: 20px;
+  margin-left: 0px;
+  padding: 0px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+  
+
   
   .button {
     margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    background: #ff5900;
-    color: black;
+    font-family: "ubuntu", sans-serif;
+    font-size: 23px;
+    background: #009FFD;
+    color: aliceblue;
     padding: 0.7em 5.5em;
     display: flex;
     align-items: center;
@@ -38,64 +50,101 @@
     overflow: hidden;
     transition: all 0.2s;
     cursor: pointer;
+    
   }
   
   .button:hover {
-    border: 2px solid #ff5900;
+    border: 2px solid aliceblue;
     background: #00000000;
-    color: #ff5900;
+    color: aliceblue;
   }
   
   .button:active {
     border: 2px solid #66da4300;
-    background: #ff5900;
+    background: #00c3ff;
     color: black;
   }
   
-  .input {
-    width: calc(100% - 10px);
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.2s;
-  }
-  
-  .input:focus {
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    background-color: transparent;
-    color: white;
-  }
+/* From Uiverse.io by Yaseen549 */ 
+.input {
+  background-color: #212121;
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
   
   .input::placeholder {
-    color: #9b725b;
+    color: aliceblue;
   }
   
   .textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    width: calc(100% - 10px);
-    padding: 8px;
-    height: 100px;
-    margin-bottom: 20px;
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    outline: none;
-    background-color: transparent;
-    color: #ff5900;
-  }
-  
-  .textarea::placeholder {
-    color: #9b725b;
+    background-color: #212121;
+    width: 90%;
+    height: 40%;
+    padding: 10px;
+    margin: 10px;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+    resize: none;
+    overflow: scroll;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
   }
   
   .textarea:focus {
-    border: 1px solid #66da4300;
-    border-bottom: 1px solid #ff5900;
-    background-color: transparent;
-    color: white;
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+  .textarea::placeholder {
+    color: aliceblue;
+  }
+  .textarea::-webkit-scrollbar {
+    width: 1px;
+    height: 8px;
+  }
+  
+  .textarea::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #009FFD;
+  }
+  
+  
+.input div{
+  flex-direction: column;
+  width: 90%;
+}
+
+  @media screen and (min-width: 800px){
+    .inputs{
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+      width: 100%;
+    }
+    .textarea{
+
+      width: 60%;
+      height: 90%;
+    }
+    .inputs div{
+      width: 40%;
+    }
   }
