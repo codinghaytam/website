@@ -11,7 +11,9 @@
     border-radius: 0px;
     padding: 0px;
     height: 90px;
-    position: sticky;
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 .links{
     width: 400px;
@@ -133,10 +135,18 @@ li{
       width: 100%;
       color: white;
       background: #131416;
-      display: block;
+      display: none;
       overflow: hidden;
-
     align-items: flex-start;
+    height: 0px;
+    position: fixed;
+    z-index: 99;
+    top: 90px;
+    transition: height 0.5s;
+}
+.LinkBox ul{
+  display: flex;
+  flex-direction: column;
 }
 .LinkBox li{
     margin-left: 0px;
@@ -159,6 +169,7 @@ li{
           display: none;
       }
       .LinkBox{
-          display: block;
+          display: flex;
+          flex-direction: row;
       }
     }

@@ -3,7 +3,7 @@ import './css/talk_to.css'
 function Talk_to(){
     return (
         <div className="emailcontaine">
-            <h1>Projects</h1>
+            <h1>lets talk</h1>
             <form className="form">
                 <div className="inputs">
                     <div>

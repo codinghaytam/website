@@ -1,14 +1,43 @@
 import React from "react";
 import { useEffect,useState } from "react";
 import './css/hero.css'
+import Typewriter from 'typewriter-effect';
+
+
+
+
 function Hero(){
+    
     return (
     <div className="background" id="hero">
         <div className="filter">
             <div className="background-grid">
-            
-            <h1>Hello there,I'm</h1>
-            <h1 id="name">Mohamed Haytam Soukrati</h1>
+    
+
+            <h1>
+                <Typewriter
+                onInit={(typewriter) => {
+                    typewriter.typeString("Hello, I am")
+                    .callFunction(() => {
+                        console.log('String typed out!');
+                    })
+                
+                    .start();
+                }}
+                />
+            </h1>
+            <h1 id="name">
+            <Typewriter
+                onInit={(typewriter) => {
+                    typewriter.typeString("Mohamed Haytam Soukrati")
+                    .callFunction(() => {
+                        console.log('String typed out!');
+                    })
+                
+                    .start();
+                }}
+                />
+            </h1>
             <div id="socials">
                 <ul className="example-2">
                     <li className="icon-content" id="linkedin">

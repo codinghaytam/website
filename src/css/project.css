@@ -20,7 +20,6 @@
     padding: 5px;
     border-radius: 1rem;
     overflow: visible;
-    background: #f7ba2b;
     background: var(--background);
     position: relative;
     z-index: 1;

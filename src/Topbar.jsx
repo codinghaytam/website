@@ -52,15 +52,17 @@ const Linklist=({list})=>{
 
 function TopBar(){
 
-    const elementRef = useRef(null);
-
+    const boxRef = useRef(null);
+    const [button,setbutton]=useState(false)
     // Toggle height between 0 and 100 on click
     const handleClick = () => {
-      if (elementRef.current) {
-        const currentHeight = elementRef.current.style.height;
-        elementRef.current.style.height = currentHeight === '0px' ? '100px' : '0px';
-        console.log(elementRef.current.style.height)
+      if(button){
+            boxRef.current.style.height="0px"
+      }else{
+            boxRef.current.style.height="500px"
+            
       }
+      setbutton(!button)
     };
     
     return(
@@ -80,7 +82,7 @@ function TopBar(){
                 <Burger/>
             </div>
         </div>
-                <div className="LinkBox"  ref={elementRef}>
+                <div className="LinkBox"  ref={boxRef}>
                     <LinklistBox list={links} />
                 </div>
             </>
