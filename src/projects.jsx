@@ -49,7 +49,7 @@ const Cards=({prs})=>{
 function Projects(){
     return (
         <div className="background" id="project">
-            <div className="filter">
+            <div className="filter" id="card-box">
                 <div className="background-grid">
                 <h1>Projects</h1>
                 <Cards prs={projects}/>

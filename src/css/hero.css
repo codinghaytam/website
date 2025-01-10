@@ -1,10 +1,10 @@
 
 
 .background{
-    width: 100%;
+    width: 100vw;
     height: 60em;
-    background: linear-gradient(45deg,black,#1A1A28,#171749,#009FFD);
-
+    background: center no-repeat url("../public/space-background.png");
+    overflow: hidden;
  
 }
 
@@ -12,24 +12,12 @@
 
     width: inherit;
     height: inherit;
-    backdrop-filter: blur(200px);
-    
+    display: flex;
 
     
 }
 
-.background-grid {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 0.1vb, transparent 0.1vb, transparent calc(100% - 0.1vb), rgba(255, 255, 255, 0.05)calc(100% - 0.1vb)), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0.1vb, transparent 0.1vb, transparent calc(100% - 0.1vb), rgba(255, 255, 255, 0.05) calc(100% - 0.1vb));
-    background-size: 40px 40px;
-    border: 0.1vb solid rgba(255, 255, 255, 0.05);
-    width: inherit;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-  }
 .background h1{
     color: antiquewhite;
     padding:0px;
@@ -136,4 +124,16 @@ ul {
     height: 100px;
     margin: 20px;
   }
+
+.info-box,.render-container{
+  width: 50%;
+  height: 100%;
+  
+}
+.info-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
