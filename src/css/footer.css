@@ -37,11 +37,12 @@
   
   #footer {
     display: flex;
-    height: 10vh;
+    height: 10rem;
     width: 100vw;
     background-color: #000000;
     line-height: 1.3;
     font-family: "ubuntu",Menlo, monospace;
+    margin: 0px;
   }
   
   @keyframes wave-animation {

@@ -18,7 +18,7 @@ const Earth = () => {
 
   useEffect(() => {
     const loader = new FBXLoader();
-    loader.load('public/earth.fbx', object => {
+    loader.load('/earth.fbx', object => {
       object.scale.set(0.015, 0.015, 0.015);
       object.traverse(child => {
         if (child.isMesh) {
@@ -32,7 +32,7 @@ const Earth = () => {
     });
 
     
-    loader.load('public/clouds.fbx', object => {
+    loader.load('/clouds.fbx', object => {
       object.scale.set(0.015, 0.015, 0.015);
       object.traverse(child => {
         if (child.isMesh) {

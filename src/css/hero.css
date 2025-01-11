@@ -3,7 +3,7 @@
 .background{
     width: 100vw;
     height: 60em;
-    background: center no-repeat url("../public/space-background.png");
+    background: center no-repeat url("/space-background.png");
     overflow: hidden;
  
 }
