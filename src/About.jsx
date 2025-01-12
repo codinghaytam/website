@@ -18,7 +18,7 @@ function About(){
                 About Me
             </h1>
             <div className="identity">
-                <img src="images/DSC_7812 (1).JPG" id="myImage"></img>
+                <img src="/myimage.jpg" id="myImage"></img>
                 <p>
                     {text}
                 </p>
