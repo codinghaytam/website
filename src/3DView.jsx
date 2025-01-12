@@ -11,7 +11,7 @@ import { BlendFunction } from 'postprocessing';
 
 
 
-const Earth = () => {
+const Earth = (props) => {
   const earthRef = useRef();
   const cloudsRef = useRef();
   const { scene } = useThree();
@@ -19,7 +19,7 @@ const Earth = () => {
   useEffect(() => {
     const loader = new FBXLoader();
     loader.load('/earth.fbx', object => {
-      object.scale.set(0.015, 0.015, 0.015);
+      object.scale.set(props.scale, props.scale, props.scale);
       object.traverse(child => {
         if (child.isMesh) {
           child.material.transparent = false;
@@ -33,7 +33,7 @@ const Earth = () => {
 
     
     loader.load('/clouds.fbx', object => {
-      object.scale.set(0.015, 0.015, 0.015);
+      object.scale.set(props.scale, props.scale, props.scale);
       object.traverse(child => {
         if (child.isMesh) {
           child.material.emissiveIntensity = 0.5;
@@ -43,7 +43,7 @@ const Earth = () => {
       scene.add(object);
       cloudsRef.current = object;
     });
-    scene.position.y=-2;
+    scene.position.y=-1;
   }, [scene]);
 
   useFrame(() => {
@@ -91,7 +91,7 @@ const View3D = (props) => {
     <Canvas camera={{ fov: 75, near: 0.1, far: 100, position: [0, 2, 5] }}
             style={{}}>
       <Lights />
-      <Earth />
+      <Earth scale={0.013}/>
       <EffectComposer>
       <HueSaturation
     blendFunction={BlendFunction.NORMAL} // blend mode

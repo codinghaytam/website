@@ -2,19 +2,26 @@
 
 .background{
     width: 100vw;
-    height: 60em;
+    min-height: 60em;
     background: center no-repeat url("/space-background.png");
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+
  
 }
 
 .filter{
 
-    width: inherit;
-    height: inherit;
-    display: flex;
+    width: 100vw;
+    height: 60rem;
+    position: absolute;
+    background-color: black;
+    z-index: 101;
+    opacity: 0.6;
+    min-width: 800px;
 
-    
 }
 
 
@@ -25,6 +32,7 @@
    font-family: inherit;
    font-size: 40px;
    text-align: center;
+   overflow: hidden;
 
 }
 #name{
@@ -126,8 +134,8 @@ ul {
   }
 
 .info-box,.render-container{
-  width: 50%;
-  height: 100%;
+  width: 90%;
+  height: 60rem;
   
 }
 .info-box{
@@ -135,5 +143,11 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 800px;
+  position: absolute;
+  z-index: 102;
+
 }
+
+
 

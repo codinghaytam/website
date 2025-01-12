@@ -12,6 +12,7 @@ function Hero(){
     return (
     <div className="background" id="hero">
         <div className="filter">
+            </div>
             <div className="info-box">
     
                 <div>
@@ -87,8 +88,7 @@ function Hero(){
             </div>
             <div className="render-container">
 
-                <View3D />
-            </div>
+                <View3D className="render-box"/>
         </div>
     </div>)
 }
