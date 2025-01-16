@@ -1,7 +1,7 @@
 import React from "react";
 import './css/project.css'
 import 'normalize.css'
-
+import { Element } from "react-scroll";
 const projects=[
     {
         title:"Abc",
@@ -48,14 +48,18 @@ const Cards=({prs})=>{
 
 function Projects(){
     return (
-        <div className="background" id="project">
-            <div id="card-box">
-                <div className="background-grid">
-                <h1>Projects</h1>
-                <Cards prs={projects}/>
+
+        <Element name="projects">
+            <div className="background" id="project">
+                <div id="card-box">
+                    <div className="background-grid">
+                    <h1>Projects</h1>
+                    <Cards prs={projects}/>
+                    </div>
                 </div>
             </div>
-        </div>)
+        </Element>
+        )
 }
 
 

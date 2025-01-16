@@ -1,6 +1,6 @@
 .About h1{
     color: #009FFD;
-    font-size: 70px;
+    font-size: max(50px,1.5vi);
     font-family: 'ubuntu',sans-serif;
 
 }
@@ -25,14 +25,14 @@
 
 .identity p{
     color:aliceblue;
-    font-size: max(20px,1.5vi);
+    font-size: max(25px,1.5vi);
     align-self: flex-start;
     margin-top: 50px;
     overflow: hidden;
     max-width: 800px;
 }
 #myImage{
-    width: 30rem;
+    width: 30%;
     height: auto;
     padding: 0px;
     margin-right: 5rem;

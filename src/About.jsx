@@ -1,5 +1,6 @@
 import React from "react";
 import './css/about.css'
+import {Element} from 'react-scroll';
 
 const text=`
 
@@ -13,6 +14,7 @@ Thank you for visiting my portfolio. Feel free to explore my work and reach out 
 
 function About(){
     return(
+        <Element name="about">
         <div className="About">
             <h1>
                 About Me
@@ -24,6 +26,7 @@ function About(){
                 </p>
             </div>
         </div>
+        </Element>
     )
 }
 

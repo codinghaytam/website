@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import logo from './assets/logo.svg'
 import "./css/topbar.css"
 import { useRef } from "react";
-
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 
 const LinklistBox=({list})=>{
+
+    
     const resultat=list.map((link)=>(
-        <Link key={crypto.randomUUID()} link={link}/>
+        <Link key={crypto.randomUUID()} link={link} />
     ))
     return <ul>{resultat}</ul>;
 }
@@ -26,16 +28,18 @@ function Burger(){
 
 
 const links=[
-    {name:"about",ad:""},
-    {name:"contact",ad:""},
-    {name:"home",ad:""},
+    {name:"about",ad:"about"},
+    {name:"home",ad:"hero"},
+    {name:"lets talk",ad:"contact"},
 ]
 
 const Link= ({ link: {name,ad}})=>{
+   
     return(
-        
-            <li className="link">
-            <a href={ad}>{name}</a>
+        <li className="link" id={ad}>
+                <ScrollLink to={ad} smooth={true} duration={1000} >
+                     {name}
+                </ScrollLink>
             </li>
         
     )
@@ -64,6 +68,7 @@ function TopBar(){
       }
       setbutton(!button)
     };
+
     
     return(
         <>

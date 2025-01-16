@@ -1,5 +1,7 @@
 import React from "react";
 import './css/talk_to.css'
+import { Element } from "react-scroll";
+
 function Talk_to(){
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -24,20 +26,23 @@ function Talk_to(){
         }
       };
     return (
-        <div className="emailcontaine">
-            <h1>lets talk</h1>
-            <form className="form" onSubmit={onSubmit}>
-                <div className="inputs">
-                    <div>
-                        <input name="name" className="input title" type="text" placeholder="Name"/>
-                        <input name="email" className="input email" type="email" placeholder="E-Mail I.D."/>
-                    
-                    </div>
-                    <textarea className="textarea" placeholder="Enter message" name="message"></textarea>
-                    
-                </div><center><button className="button" type="submit">Submit</button></center>
-            </form>
-        </div>
+      
+        <Element name="contact">
+          <div className="emailcontaine">
+              <h1>lets talk</h1>
+              <form className="form" onSubmit={onSubmit}>
+                  <div className="inputs">
+                      <div>
+                          <input name="name" className="input title" type="text" placeholder="Name"/>
+                          <input name="email" className="input email" type="email" placeholder="E-Mail I.D."/>
+          
+                      </div>
+                      <textarea className="textarea" placeholder="Enter message" name="message"></textarea>
+          
+                  </div><center><button className="button" type="submit">Submit</button></center>
+              </form>
+          </div>
+        </Element>
     )
 }
 

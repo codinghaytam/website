@@ -30,14 +30,14 @@
     padding:0px;
     margin: 0px;
    font-family: inherit;
-   font-size: 40px;
+   font-size: max(40px,1.5vi);
    text-align: center;
    overflow: hidden;
 
 }
 #name{
     width: 80%;
-    font-size: 65px;
+    font-size: min(7vi,65px);
     font-weight: 300;
     text-align: center;
     color: #009FFD;

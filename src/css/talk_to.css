@@ -1,6 +1,6 @@
 .emailcontaine h1{
   color: #009FFD;
-  font-size: max(40px,1.5vi);
+  font-size: max(50px,1.5vi);
   font-family: 'ubuntu',sans-serif;
   align-self: center;
 }
@@ -42,7 +42,7 @@
   .button {
     margin-top: 10px;
     font-family: "ubuntu", sans-serif;
-    font-size:max( 15px,1.5vi);
+    font-size:max( 20px,1.5vi);
     font-weight: bold;
     background: #009FFD;
     color: aliceblue;
