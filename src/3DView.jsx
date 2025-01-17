@@ -91,7 +91,7 @@ const View3D = (props) => {
     <Canvas camera={{ fov: 75, near: 0.1, far: 100, position: [0, 2, 5] }}
             style={{}}>
       <Lights />
-      <Earth scale={0.013}/>
+      <Earth scale={props.scale}/>
       <EffectComposer>
       <HueSaturation
     blendFunction={BlendFunction.NORMAL} // blend mode

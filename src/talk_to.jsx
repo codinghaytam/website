@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import './css/talk_to.css'
 import { Element } from "react-scroll";
 
 function Talk_to(){
+    const [alertMessage, setAlertMessage] = useState("");
+    const inputs= useRef(null)
+    const textA=useRef(null)
+
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
     
-        formData.append("access_key", "");
+        formData.append("access_key", "9a3ff464-18a6-4274-a203-9dc955f1994a");
     
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -22,25 +26,28 @@ function Talk_to(){
         }).then((res) => res.json());
     
         if (res.success) {
-          console.log("Success", res);
-        }
+          textA.current.value=""
+          inputs.current.value=""
+        } 
       };
+
     return (
-      
         <Element name="contact">
           <div className="emailcontaine">
               <h1>lets talk</h1>
               <form className="form" onSubmit={onSubmit}>
                   <div className="inputs">
                       <div>
-                          <input name="name" className="input title" type="text" placeholder="Name"/>
-                          <input name="email" className="input email" type="email" placeholder="E-Mail I.D."/>
+                          <input name="name" className="input title" type="text" placeholder="Name" ref={inputs}/>
+                          <input name="email" className="input email" type="email" placeholder="E-Mail I.D." ref={inputs}/>
           
                       </div>
-                      <textarea className="textarea" placeholder="Enter message" name="message"></textarea>
+                      <textarea className="textarea" placeholder="Enter message" name="message" ref={textA}></textarea>
           
                   </div><center><button className="button" type="submit">Submit</button></center>
               </form>
+              {alertMessage && <SimpleAlert message={alertMessage} duration={3000} />}
+
           </div>
         </Element>
     )

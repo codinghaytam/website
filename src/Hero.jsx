@@ -29,7 +29,6 @@ function Hero(){
                         onInit={(typewriter) => {
                             typewriter.typeString("I'm Mohamed Haytam Soukrati")
                             .callFunction(() => {
-                                console.log('String typed out!');
                             })
         
                             .start();
