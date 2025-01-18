@@ -129,3 +129,11 @@
   align-items: center;
   margin: 100px;
  }
+
+.card-info img{
+  width: 80%;
+}
+.card-info .title{
+  width: 90%;
+  text-align: center;
+}

@@ -4,25 +4,18 @@ import 'normalize.css'
 import { Element } from "react-scroll";
 const projects=[
     {
-        title:"Abc",
-        description:"hello",
-        image:"https://picsum.photos/200/150"
+        title:"Calculator App using Html/css and javascript",
+        image:"/project-calculator.png"
     },
     {
-        title:"Abc",
-        description:"hello",
-        image:"https://picsum.photos/200/150"
+        title:"Static code analyser for smart contracts using Ai",
+        image:"public/cover-static-analysis.png"
     },
     {
-        title:"Abc",
-        description:"hello",
-        image:"https://picsum.photos/200/150"
+        title:"CRM Desktop app using javaFX",
+        image:"public/java-crm.jpg"
     },
-    {
-        title:"Abc",
-        description:"hello",
-        image:"https://picsum.photos/200/150"
-    },
+    
 ]
 const Card=({project})=>{
     return(
@@ -30,7 +23,6 @@ const Card=({project})=>{
   <div className="card-info">
     <img src={project.image}></img>
     <h2 className="title">{project.title}</h2>
-    <p className="desc">{project.description}</p>
   </div>
 </div>
     )
