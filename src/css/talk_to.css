@@ -1,0 +1,162 @@
+.emailcontaine h1{
+  color: #009FFD;
+  font-size: max(50px,1.5vi);
+  font-family: 'ubuntu',sans-serif;
+  align-self: center;
+}
+.emailcontaine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60em;
+  width: 100vw;
+  background-color: #131416;
+  min-width: 800px;
+
+  
+}
+.form {
+
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: min(90%,1500px);
+    height: 80%;
+    font-size: max(1vi,22px);
+    
+  }
+ .inputs{
+  margin: 20px;
+  margin-left: 0px;
+  padding: 0px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+ 
+
+  
+  .button {
+    margin-top: 10px;
+    font-family: "ubuntu", sans-serif;
+    font-size:max( 20px,1.5vi);
+    font-weight: bold;
+    background: #009FFD;
+    color: aliceblue;
+    padding: 0.7em 5.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #66da4300;
+    border-radius: 5em;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    width: 200px;
+    
+  }
+  
+  .button:hover {
+    border: 2px solid aliceblue;
+    background: #00000000;
+    color: aliceblue;
+  }
+  
+  .button:active {
+    border: 2px solid #66da4300;
+    background: #00c3ff;
+    color: black;
+  }
+  
+/* From Uiverse.io by Yaseen549 */ 
+.input {
+  background-color: #212121;
+  width: min(90%,500px);
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+  
+  .input::placeholder {
+    color: aliceblue;
+    opacity: 0.2;
+  }
+  
+  .textarea {
+    background-color: #212121;
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+    resize: none;
+    overflow: scroll;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+  }
+  
+  .textarea:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+  .textarea::placeholder {
+    color: aliceblue;
+    opacity: 0.2;
+
+  }
+  .textarea::-webkit-scrollbar {
+    width: 1px;
+    height: 8px;
+  }
+  
+  .textarea::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #009FFD;
+  }
+  
+  
+.input div{
+  flex-direction: column;
+  width: 90%;
+}
+
+  @media screen and (min-width: 800px){
+    .inputs{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0px;
+      width: 100%;
+    }
+    .textarea{
+
+      width: 60%;
+      height: 90%;
+    }
+    .inputs div{
+      width: 40%;
+    }
+  }

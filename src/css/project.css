@@ -1,0 +1,131 @@
+#project h1{
+    color: #009FFD;
+    font-size: max(50px,1.5vi);
+    font-family: 'ubuntu',sans-serif;
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60em;
+    width: 100vw;
+    background-color: #131416;
+}
+#card-box{
+  width: 80%;
+  height: 90%;
+}
+.card {
+    --background: linear-gradient(to left, #009FFD 0%, #9900ff 100%);
+    width: 80%;
+    height: 400px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    transition: box-shadow 150ms ease-out 100ms;
+    min-width: 300px;
+    min-height: 400px;
+
+    
+   }
+   
+   .card::after {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 300px;
+    width: 400px;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .card-info {
+    --color: #181818;
+    background: var(--color);
+    color:#009FFD ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+   }
+   
+   /*Hover*/
+  
+   
+    .card:hover{
+        box-shadow: #00eeffad 0px 0px 20px 5px;
+     
+    }
+    
+   .cards{
+    display: flex;
+    width: 90%;
+    overflow: scroll;
+    
+   }
+   .desc{
+    color: antiquewhite;
+    font-size: medium;
+    font-weight: 300;
+   }
+   .card img{
+        border-radius: 5px;
+   }
+
+   .scroll-1::-webkit-scrollbar {
+    width: 1px;
+    height: 8px;
+  }
+  
+  .scroll-1::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #009FFD;
+  }
+  
+
+  
+  .container {
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-top: 24px;
+    border-radius: 8px;
+    gap: 20px;
+  }
+
+ .background-grid{
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+ #card-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+ }
