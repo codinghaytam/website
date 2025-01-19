@@ -1,7 +1,0 @@
-body{
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-  font-family: "Ubuntu", sans-serif;
-  scroll-behavior: smooth;
-}
