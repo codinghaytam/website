@@ -9,11 +9,11 @@ const projects=[
     },
     {
         title:"Static code analyser for smart contracts using Ai",
-        image:"public/cover-static-analysis.png"
+        image:"/cover-static-analysis.png"
     },
     {
         title:"CRM Desktop app using javaFX",
-        image:"public/java-crm.jpg"
+        image:"/java-crm.jpg"
     },
     
 ]
