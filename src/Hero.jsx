@@ -39,7 +39,7 @@ function Hero(){
                         <ul className="example-2">
                             <li className="icon-content" id="linkedin">
                                 <a
-                                href="https://linkedin.com/"
+                                href="https://www.linkedin.com/in/mohamed-haytam-soukrati-702286276/"
                                 aria-label="LinkedIn"
                                 data-social="linkedin"
                                 >
@@ -62,7 +62,7 @@ function Hero(){
                             </li>
                             <li className="icon-content" id="github">
                                 <a
-                                href="https://www.github.com/"
+                                href="https://github.com/codinghaytam"
                                 aria-label="GitHub"
                                 data-social="github"
                                 >
