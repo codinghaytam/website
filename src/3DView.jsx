@@ -88,7 +88,7 @@ function ResizeCanvas() {
 
 const View3D = (props) => {
   return (
-    <Canvas camera={{ fov: 75, near: 0.1, far: 100, position: [0, 0, 6] }}
+    <Canvas camera={{ fov: 75, near: 0.1, far: 100, position: [0, 0, 5] }}
             style={{}}>
       <Lights />
       <Earth scale={props.scale}/>

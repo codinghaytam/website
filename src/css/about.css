@@ -21,6 +21,7 @@
     flex-wrap:wrap;
     width: 80vw;
     justify-content: center;
+    min-width: none;
 }
 
 .identity p{

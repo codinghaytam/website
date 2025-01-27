@@ -23,11 +23,12 @@
 }
 .card {
     --background: linear-gradient(to left, #009FFD 0%, #9900ff 100%);
-    min-width: 17rem;
+    width: 17rem;
+    min-width: 250px;
     height: 20em;
     padding: 5px;
     border-radius: 1rem;
-    overflow: visible;
+    overflow: scroll;
     background: var(--background);
     position: relative;
     z-index: 1;
@@ -83,8 +84,8 @@
    .cards{
     display: flex;
     width: 90%;
-    overflow: scroll;
     justify-content: center;
+    flex-wrap: wrap;
     
    }
    .desc{
