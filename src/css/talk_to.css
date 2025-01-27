@@ -1,6 +1,6 @@
 .emailcontaine h1{
   color: #009FFD;
-  font-size: max(50px,1.5vi);
+  font-size: 50px;
   font-family: 'ubuntu',sans-serif;
   align-self: center;
 }
@@ -12,7 +12,6 @@
   height: 60em;
   width: 100vw;
   background-color: #131416;
-  min-width: 800px;
 
   
 }
@@ -22,9 +21,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: min(90%,1500px);
+    width: 90%;
     height: 80%;
-    font-size: max(1vi,22px);
+    font-size: 25px;
+    max-width: 60em;
     
   }
  .inputs{
@@ -42,7 +42,7 @@
   .button {
     margin-top: 10px;
     font-family: "ubuntu", sans-serif;
-    font-size:max( 20px,1.5vi);
+    font-size:25px;
     font-weight: bold;
     background: #009FFD;
     color: aliceblue;

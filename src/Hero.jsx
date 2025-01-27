@@ -88,7 +88,7 @@ function Hero(){
                 </div>
                 </div>
                 <div className="render-container">
-                    <View3D className="render-box" scale={0.01}/>
+                    <View3D className="render-box" scale={(window.innerWidth)*0.00002}/>
             </div>
         </div>
     </Element>

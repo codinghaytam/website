@@ -2,25 +2,21 @@
 
 .background{
     width: 100vw;
-    min-height: 60em;
+    min-height: 65em;
     background: center no-repeat url("/space-background.png");
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 800px;
-
- 
 }
 
 .filter{
 
     width: 100vw;
-    height: 60rem;
+    height: 65em;
     position: absolute;
     background-color: black;
     z-index: 101;
     opacity: 0.6;
-    min-width: 800px;
 
 }
 
@@ -143,7 +139,6 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 800px;
   position: absolute;
   z-index: 102;
 

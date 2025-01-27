@@ -1,25 +1,30 @@
 #project h1{
     color: #009FFD;
-    font-size: max(50px,1.5vi);
+    font-size: 50px;
     font-family: 'ubuntu',sans-serif;
+    margin-bottom: 2em;
 }
 #project{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 60em;
+    justify-content: space-around;
     width: 100vw;
+    min-height: 60em;
     background-color: #131416;
+
 }
 #card-box{
-  width: 80%;
-  height: 90%;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  
 }
 .card {
     --background: linear-gradient(to left, #009FFD 0%, #9900ff 100%);
-    width: 80%;
-    height: 400px;
+    min-width: 17rem;
+    height: 20em;
     padding: 5px;
     border-radius: 1rem;
     overflow: visible;
@@ -28,8 +33,6 @@
     z-index: 1;
     margin: 20px;
     transition: box-shadow 150ms ease-out 100ms;
-    min-width: 300px;
-    min-height: 400px;
 
     
    }
@@ -81,6 +84,7 @@
     display: flex;
     width: 90%;
     overflow: scroll;
+    justify-content: center;
     
    }
    .desc{
@@ -109,7 +113,7 @@
     scroll-snap-type: x mandatory;
     scroll-padding-top: 24px;
     border-radius: 8px;
-    gap: 20px;
+    gap: 10px;
   }
 
  .background-grid{

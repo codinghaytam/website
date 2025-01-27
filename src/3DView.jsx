@@ -43,7 +43,7 @@ const Earth = (props) => {
       scene.add(object);
       cloudsRef.current = object;
     });
-    scene.position.y=-1;
+    scene.position.y=-2.5;
   }, [scene]);
 
   useFrame(() => {
@@ -88,7 +88,7 @@ function ResizeCanvas() {
 
 const View3D = (props) => {
   return (
-    <Canvas camera={{ fov: 75, near: 0.1, far: 100, position: [0, 2, 5] }}
+    <Canvas camera={{ fov: 75, near: 0.1, far: 100, position: [0, 0, 6] }}
             style={{}}>
       <Lights />
       <Earth scale={props.scale}/>

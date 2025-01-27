@@ -6,8 +6,8 @@ function Footer(){
         <div id="footer">
         <ul>
             
-          <li><a href="mailto:julesforrest@gmail.com">Email</a></li>
-          <li><a href="https://github.com/julesforrest">Github</a></li>
+          <li><a href="mailto:pro.haytamsoukrati@gmail.com">Email</a></li>
+          <li><a href="https://github.com/codinghaytam">Github</a></li>
           <li>
             <p>👋</p>
           </li>
