@@ -11,6 +11,7 @@
     border-radius: 0px;
     padding: 0px;
     height: 8em ;
+    max-height: 15vh;
     position: fixed;
     z-index: 103;
     top: 0;
